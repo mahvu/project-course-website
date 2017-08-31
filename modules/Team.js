@@ -14,6 +14,7 @@ export default React.createClass({
         <li><NavLink to="/team/saku">Zacky</NavLink></li>
         <li><NavLink to="/team/miika">Soulid</NavLink></li>
         <li><NavLink to="/team/lauri">ufam</NavLink></li>
+        <li><NavLink to="/team/Santtu">Hammar</NavLink></li>
       </ul>
       {this.props.children}
     </div>
