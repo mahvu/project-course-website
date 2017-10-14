@@ -7,12 +7,12 @@ import Home from './modules/Home'
 import Member from './modules/Member'
 
 render((
-    <Router history={browserHistory}>
-        <Route path="/" component={App}>
-        <IndexRoute component={Home}/>
-            <Route path="/team" component={Team}>
-                <Route path="/team/:memberName" component={Member}/>
-            </Route>
+  <Router history={browserHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={Home}/>
+        <Route path="/team" component={Team}>
+          <Route path="/team/:memberName" component={Member}/>
         </Route>
-    </Router>
-  ), document.getElementById('app'))
+    </Route>
+  </Router>
+), document.getElementById('app'))
