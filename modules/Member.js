@@ -43,11 +43,11 @@ const parseMemberBio = (member) => {
       break;
 
     case 'Akseli':
-      return "Roles: Programmer, Chief quality officer.";
+      return "Roles: Programmer, QA, Agile coach. Akseli is 10th and last year Software Engineering student. His major is software engineering and minors hypermedia and logistics. Akseli has background in some hobby projects with full stack js-applications and  few years working experience in Operations as Systems Administrator and is currently working full time as Systems Specialist at Cybercom Finland. Akseli has strong intrests in DevOps and Agile methods.";
       break;
 
     case 'Pietari':
-      return "Roles: Programmer.";
+      return "Roles: Programmer. Pietari is studying his 7th (and last) year in Software Engineering. He has many years of experience from modern fullstack web development.";
       break;
 
     case 'Santtu':
