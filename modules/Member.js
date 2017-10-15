@@ -1,30 +1,32 @@
 import React from 'react'
 
-const parseMemberBurn = (member) => {
+const parseMemberBurn = () => {
   
+  return "/burnSprint1.png";
+  /*
   switch(member) {
     case 'Saku':
-      return "/zackyImage.png";
+      return "/burnSprint1.png";
       break;
 
     case 'Akseli':
-      return "/zackyImage.png";
+      return "/burnSprint1.png";
       break;
 
     case 'Pietari':
-      return "/zackyImage.png";
+      return "/burnSprint1.png";
       break;
 
     case 'Santtu':
-      return "/zackyImage.png";
+      return "/burnSprint1.png";
       break;
 
     case 'Miika':
-      return "/zackyImage.png";
+      return "/burnSprint1.png";
       break;
 
     case 'Lauri':
-      return "/zackyImage.png";
+      return "/burnSprint1.png";
       break;
 
       //doesnt render default, as return value is a relative url
@@ -33,10 +35,14 @@ const parseMemberBurn = (member) => {
       return "Unknown member";
       break;
   }
+  */
 }
 
-const parseMemberHours = (member) => {
+const parseMemberHours = () => {
   
+  return "/hoursSprint1.png";
+
+  /*
   switch(member) {
     case 'Saku':
       return "/zackyImage.png";
@@ -68,6 +74,7 @@ const parseMemberHours = (member) => {
       return "Unknown member";
       break;
   }
+  */
 }
 
 const parseMemberBio = (member) => {
@@ -114,10 +121,10 @@ export default React.createClass({
         <p className="memberBio"> {parseMemberBio(this.props.params.memberName)} </p>
 
         <h3>Hours</h3>
-        <img src={parseMemberHours(this.props.params.memberName)} className="memberTimeChart" />
+        <img src={parseMemberHours()} className="memberTimeChart" />
         
         <h3>Burnup</h3>
-        <img src={parseMemberBurn(this.props.params.memberName)} className="memberBurnChart" />
+        <img src={parseMemberBurn()} className="memberBurnChart" />
 
       </div>
     )
