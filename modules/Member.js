@@ -3,11 +3,11 @@ import React from 'react'
 const parseMemberHours = (member) => {
   
   switch(member) {
-    case 'saku':
+    case 'Saku':
       return "/zackyImage.png";
       break;
 
-    case 'akseli':
+    case 'Akseli':
       return "/zackyImage.png";
       break;
 
@@ -19,11 +19,11 @@ const parseMemberHours = (member) => {
       return "/zackyImage.png";
       break;
 
-    case 'miika':
+    case 'Miika':
       return "/zackyImage.png";
       break;
 
-    case 'lauri':
+    case 'Lauri':
       return "/zackyImage.png";
       break;
 
@@ -38,28 +38,28 @@ const parseMemberHours = (member) => {
 const parseMemberBio = (member) => {
   
   switch(member) {
-    case 'saku':
-      return "saku on asdadsf";
+    case 'Saku':
+      return "Roles: Product Owner, User Experience Designer. Saku is a 7th year Computer Science student majoring in Pervasive Computing with interests in Machine Learning, Artificial Intelligence and Digital Engineering as well as User Interface Design.";
       break;
 
-    case 'akseli':
-      return "que pasa";
+    case 'Akseli':
+      return "Roles: Programmer, Chief quality officer.";
       break;
 
     case 'Pietari':
-      return "pr0ph3t";
+      return "Roles: Programmer.";
       break;
 
     case 'Santtu':
-      return "hanppari";
+      return "Roles: Programmer, Risk Management. Santtu is a 9th and a last year Computer Science student with strong background in finance. He is majoring in software engineering and is especially interested in machine learning, artificial intelligence and data science; topics he has studied extensively in both bachelor’s and master’s theses.";
       break;
 
-    case 'miika':
-      return "el hefe";
+    case 'Miika':
+      return "Roles: Project Manager, programmer. Miika is a 7th year Software Engineering student. He has 2 years of experience in web development on .Net environment. He is also interested in mobile development, mostly with React Native.";
       break;
 
-    case 'lauri':
-      return "ufam";
+    case 'Lauri':
+      return "Roles: Programmer. Lauri is a 7th year Software Engineering student. Interests lie in various web technologies, including both front end and back end technologies.";
       break;
 
     default:
