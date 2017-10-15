@@ -1,5 +1,40 @@
 import React from 'react'
 
+const parseMemberBurn = (member) => {
+  
+  switch(member) {
+    case 'Saku':
+      return "/zackyImage.png";
+      break;
+
+    case 'Akseli':
+      return "/zackyImage.png";
+      break;
+
+    case 'Pietari':
+      return "/zackyImage.png";
+      break;
+
+    case 'Santtu':
+      return "/zackyImage.png";
+      break;
+
+    case 'Miika':
+      return "/zackyImage.png";
+      break;
+
+    case 'Lauri':
+      return "/zackyImage.png";
+      break;
+
+      //doesnt render default, as return value is a relative url
+      // '/team/jorma' handles poorly
+    default:
+      return "Unknown member";
+      break;
+  }
+}
+
 const parseMemberHours = (member) => {
   
   switch(member) {
@@ -81,6 +116,9 @@ export default React.createClass({
         <h3>Hours</h3>
         <img src={parseMemberHours(this.props.params.memberName)} className="memberTimeChart" />
         
+        <h3>Burnup</h3>
+        <img src={parseMemberBurn(this.props.params.memberName)} className="memberBurnChart" />
+
       </div>
     )
   }
