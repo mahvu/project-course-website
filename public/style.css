@@ -1,11 +1,18 @@
 .active{
     background-color: #0099FF;
 }
+
+html, body, #app, #app>div {
+  height: 100%
+}
+
+
 body {
     background-color: #767676;
     padding: 20px;
     margin: 0;
   }
+
   h1, h2, p, ul, li {
     font-family: Helvetica, Arial, sans-serif;
   }
@@ -28,11 +35,18 @@ body {
   .content {
     background-color: #FFF;
     padding: 20px;
+    min-height: 500px;
   }
   .content h2 {
     padding: 0;
     margin: 0;
+    height: 90%
   }
   .content li {
     margin-bottom: 10px;
+  }
+
+  img {
+    max-width: 50%;
+    max-height: 50%;
   }

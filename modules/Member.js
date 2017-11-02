@@ -1,82 +1,5 @@
 import React from 'react'
 
-const parseMemberBurn = () => {
-  
-  return "/burnSprint1.png";
-  /*
-  switch(member) {
-    case 'Saku':
-      return "/burnSprint1.png";
-      break;
-
-    case 'Akseli':
-      return "/burnSprint1.png";
-      break;
-
-    case 'Pietari':
-      return "/burnSprint1.png";
-      break;
-
-    case 'Santtu':
-      return "/burnSprint1.png";
-      break;
-
-    case 'Miika':
-      return "/burnSprint1.png";
-      break;
-
-    case 'Lauri':
-      return "/burnSprint1.png";
-      break;
-
-      //doesnt render default, as return value is a relative url
-      // '/team/jorma' handles poorly
-    default:
-      return "Unknown member";
-      break;
-  }
-  */
-}
-
-const parseMemberHours = () => {
-  
-  return "/hoursSprint1.png";
-
-  /*
-  switch(member) {
-    case 'Saku':
-      return "/zackyImage.png";
-      break;
-
-    case 'Akseli':
-      return "/zackyImage.png";
-      break;
-
-    case 'Pietari':
-      return "/zackyImage.png";
-      break;
-
-    case 'Santtu':
-      return "/zackyImage.png";
-      break;
-
-    case 'Miika':
-      return "/zackyImage.png";
-      break;
-
-    case 'Lauri':
-      return "/zackyImage.png";
-      break;
-
-      //doesnt render default, as return value is a relative url
-      // '/team/jorma' handles poorly
-    default:
-      return "Unknown member";
-      break;
-  }
-  */
-}
-
 const parseMemberBio = (member) => {
   
   switch(member) {
@@ -119,12 +42,6 @@ export default React.createClass({
         
         <h3>Bio</h3>
         <p className="memberBio"> {parseMemberBio(this.props.params.memberName)} </p>
-
-        <h3>Hours</h3>
-        <img src={parseMemberHours()} className="memberTimeChart" />
-        
-        <h3>Burnup</h3>
-        <img src={parseMemberBurn()} className="memberBurnChart" />
 
       </div>
     )
